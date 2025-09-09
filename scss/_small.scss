@@ -1,0 +1,100 @@
+//Prevents adjustments of font size after orientation changes.//
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+}
+
+//Apply a natural box layout model to all elements.//
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    color: $fColor;
+}
+
+#headerWrapper {
+    background-color: $pColor;
+    color: $fColor;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    padding: $gutter;
+    gap: 8px;
+
+    h1 {
+        margin: 0;
+        padding-left: $gutter;
+
+    }
+}
+
+#navWrapper {
+    background-color: $sColor;
+    padding: 8px;
+    
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+
+
+        li {
+            flex: 1;
+
+        }
+    }
+
+    li.active {
+        background-color: $pColor;
+
+        a {
+            color: $fColor;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 0.75rem;
+        color: $fColor;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            color: white !important;
+            background-color: $tColor;
+        }
+    }
+}
+
+main {
+    padding-left: $gutter;
+}
+
+#footerWrapper {
+    color: $fColor;
+    background-color: $tColor;
+    padding: 8px;
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
