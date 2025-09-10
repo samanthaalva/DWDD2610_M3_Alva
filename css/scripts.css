@@ -316,7 +316,6 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  height: 100%;
 }
 
 * {
@@ -327,6 +326,9 @@ body {
   height: 100%;
   font-family: "Jockey One", sans-serif;
   color: #313131;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #headerWrapper {
@@ -377,8 +379,15 @@ nav a:hover {
   background-color: #677C77;
 }
 
-main {
-  padding-left: 16px;
+#mainWrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
 #footerWrapper {
