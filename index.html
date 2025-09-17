@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <meta name="description" content="DWDD1610 Module 3" />
+    <meta name="author" content="Samantha Alva" <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font here. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/scripts.min.css" rel="stylesheet" />
+
+    <!--Fav Icon Code-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <img src="images/logo.png" alt="logo" width="40px" height="40px" />
+        <h1>Urban Studio</h1>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Our Process</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mainWrapper">
+      <main>
+        <picture class="hero">
+          <source media="(max-width: 700px)" srcset="images/hero-small.webp" />
+          <source
+            media="(max-width: 1100px)"
+            srcset="images/hero-medium.webp"
+          />
+          <img src="images/hero-large.webp" alt="Buildings" />
+        </picture>
+        <h1>Our Process</h1>
+        <!--Video tag starts here!-->
+        <video controls>
+          <source
+            src="media/M3_hb_alva.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="media/M3_hb_alva.webm"
+            type="video/webm"
+          />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="media/M3_Alva_EN.vtt"
+            default
+          />
+          <track
+            label="Español"
+            kind="subtitles"
+            srclang="es"
+            src="media/M3_Alva_ES.vtt"
+  
+          />
+        </video>
+      </main>
+    </div>
+    <div id="footerWrapper">
+      <footer>
+        <p>&copy; <span id="year">x</span> &bull; Samantha Alva</p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
