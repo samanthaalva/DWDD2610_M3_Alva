@@ -51,11 +51,6 @@ nav {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        display: flex;
-        li {
-            flex: 1;
-
-        }
     }
 
     li.active {
@@ -110,4 +105,19 @@ nav {
 video {
     width: 90%;
     margin-left: 5%;
+}
+
+details {
+    margin: .5rem $gutter;
+    
+    summary {
+        background-color: $pColor;
+        color: $fColor;
+        font-size: 1.5rem;
+        padding: $gutter;
+    }
+    p {
+        font-size: 1.5rem;
+        color: $fColor;
+    }
 }

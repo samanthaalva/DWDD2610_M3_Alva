@@ -356,10 +356,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-}
-nav ul li {
-  flex: 1;
 }
 nav li.active {
   background-color: #F6BD60;
@@ -410,6 +406,20 @@ video {
   margin-left: 5%;
 }
 
+details {
+  margin: 0.5rem 16px;
+}
+details summary {
+  background-color: #F6BD60;
+  color: #313131;
+  font-size: 1.5rem;
+  padding: 16px;
+}
+details p {
+  font-size: 1.5rem;
+  color: #313131;
+}
+
 @media only screen and (min-width: 35rem) {
   header {
     padding: 2rem 16px;
@@ -419,6 +429,32 @@ video {
   }
   nav {
     font-size: 2rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav ul li {
+    flex: 1;
+  }
+  nav li.active {
+    background-color: #F6BD60;
+  }
+  nav li.active a {
+    color: #313131;
+  }
+  nav a {
+    display: block;
+    padding: 0.75rem;
+    color: #313131;
+    text-align: center;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: white !important;
+    background-color: #677C77;
   }
   main h1 {
     font-size: 2rem;
